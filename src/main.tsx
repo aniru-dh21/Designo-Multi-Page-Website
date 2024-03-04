@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import PageContainer from "./components/shared/page.container";
 import PageContent from "./components/shared/page.content";
 import Header from "./components/header/header";
+import HomePage from "./pages/home.page";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
       <PageContainer>
         <PageContent>
           <Header />
+          <HomePage />
         </PageContent>
       </PageContainer>
     ),
