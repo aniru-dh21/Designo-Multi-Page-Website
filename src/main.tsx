@@ -7,6 +7,7 @@ import PageContent from "./components/shared/page.content";
 import Header from "./components/header/header";
 import HomePage from "./pages/home.page";
 import Footer from "./components/footer/footer";
+import WebDesignPage from "./pages/webdesign.page";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,18 @@ const router = createBrowserRouter([
         <PageContent>
           <Header />
           <HomePage />
+        </PageContent>
+        <Footer />
+      </PageContainer>
+    ),
+  },
+  {
+    path: "/webdesign",
+    element: (
+      <PageContainer>
+        <PageContent>
+          <Header />
+          <WebDesignPage />
         </PageContent>
         <Footer />
       </PageContainer>
