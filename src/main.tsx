@@ -6,6 +6,7 @@ import PageContainer from "./components/shared/page.container";
 import PageContent from "./components/shared/page.content";
 import Header from "./components/header/header";
 import HomePage from "./pages/home.page";
+import Footer from "./components/footer/footer";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
           <Header />
           <HomePage />
         </PageContent>
+        <Footer />
       </PageContainer>
     ),
   },
