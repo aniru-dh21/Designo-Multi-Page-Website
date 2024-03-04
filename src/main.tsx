@@ -8,6 +8,7 @@ import Header from "./components/header/header";
 import HomePage from "./pages/home.page";
 import Footer from "./components/footer/footer";
 import WebDesignPage from "./pages/webdesign.page";
+import AppDesignPage from "./pages/adddesign.page";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,18 @@ const router = createBrowserRouter([
         <PageContent>
           <Header />
           <WebDesignPage />
+        </PageContent>
+        <Footer />
+      </PageContainer>
+    ),
+  },
+  {
+    path: "/appdesign",
+    element: (
+      <PageContainer>
+        <PageContent>
+          <Header />
+          <AppDesignPage />
         </PageContent>
         <Footer />
       </PageContainer>
